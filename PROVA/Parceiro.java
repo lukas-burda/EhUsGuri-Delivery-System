@@ -1,5 +1,7 @@
 package PROVA;
 
+import java.util.ArrayList;
+
 public class Parceiro extends AbsUsuario {
 	Parceiro(){
 		this.CPF = "123";
@@ -12,7 +14,7 @@ public class Parceiro extends AbsUsuario {
 		System.out.println("Produto " + produto.Nome + " registrado.");
 	}
 	
-	public void Pedido(AbsProduto produto) {
+	public void Pedido(ArrayList<AbsProduto> produtos) {
 		System.out.println("Aguardando Entregador.");
 	}
 }

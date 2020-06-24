@@ -1,5 +1,7 @@
 package PROVA;
 
+import java.util.ArrayList;
+
 public class Entregador extends AbsUsuario {
 	Entregador(){
 		this.CPF = "564";
@@ -8,8 +10,8 @@ public class Entregador extends AbsUsuario {
 		this.Nome = "Juscelino Kubitschek";
 	}
 	
-	public void Entregar(AbsProduto produto, String EndEntrega) {
-		System.out.println(produto.Nome + " coletado. A caminho do endereço: " + EndEntrega + ".");
-		System.out.println(produto.Nome + " entregue.");
+	public void Entregar(ArrayList<AbsProduto> produto, String EndEntrega) {
+		System.out.println("Produtos coletados. A caminho do endereço: " + EndEntrega + ".");
+		System.out.println("Produtos entregue.");
 	}
 }
